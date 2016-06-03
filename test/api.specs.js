@@ -23,7 +23,7 @@ describe('API', function() {
 		it('POST /contacts should create a new contact', function() {
 			return request(api)
 			.post('/contacts')
-			.send({name: "edward"})
+			.send({contact: {name: "edward"}})
 			.expect(200);
 		});
 
