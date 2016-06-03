@@ -56,6 +56,6 @@ api.delete('/contacts/:name', function(req, res, next) {
 
 var port = process.env.PORT || DEFAULT_PORT;
 console.log('API listening on port ' + port);
-api.listen(3000);
+api.listen(port);
 
 module.exports = api;
